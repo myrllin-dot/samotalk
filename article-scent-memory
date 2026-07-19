@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>牠不是記仇，是身體記得那個氣味｜SAMO TALK 薩摩白</title>
 <meta name="description" content="從動物的嗅覺記憶出發，理解為什麼牠會對某個角落、某件衣服特別執著。分離焦慮、認床認人，其實都跟氣味被切斷有關。用真實個案，看懂牠的堅持。">
-<link rel="canonical" href="https://samotalk.com/article-scent-memory.html">
+<link rel="canonical" href="https://samotalk.com/article-scent-memory">
 <meta property="og:title" content="牠不是記仇，是身體記得那個氣味｜SAMO TALK 薩摩白">
 <meta property="og:type" content="article">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,7 +20,7 @@
   "description": "從動物的嗅覺記憶出發，理解分離焦慮與認床認人的行為背後，其實是安全感被切斷的訊號。",
   "author": {"@type":"Organization","name":"SAMO TALK 薩摩白"},
   "publisher": {"@type":"Organization","name":"SAMO TALK 薩摩白"},
-  "mainEntityOfPage": "https://samotalk.com/article-scent-memory.html",
+  "mainEntityOfPage": "https://samotalk.com/article-scent-memory",
   "datePublished": "2026-07-01",
   "inLanguage": "zh-Hant"
 }
@@ -30,7 +30,7 @@
 
 <header class="site">
   <div class="nav-inner">
-    <a href="index.html" class="brand">
+    <a href="index" class="brand">
       <span class="mark">SAMO TALK</span>
       <span class="cn">薩摩白</span>
     </a>
