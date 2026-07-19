@@ -24,6 +24,7 @@
   ]
 }
 </script>
+<script>function handlePhotoError(img){ if(img && img.parentElement){ img.parentElement.classList.add('photo-fallback'); } if(img) img.remove(); }</script>
 </head>
 <body>
 
@@ -51,7 +52,7 @@
       <div class="sec-head">
         <p class="eyebrow">個案檔案室</p>
         <h2>十二封信，十二種說不出口的心情</h2>
-        <p>每一篇都是真實發生過的動物溝通。點開信封讀完整封信，或者用下面的篩選，先看看貓、狗，還是兔子想說什麼。</p>
+        <p>每一篇都是真實發生過的動物溝通。點開信封讀完整封信，或者用下面的篩選，先看看貓、狗，還是兔子想說什麼。標示「故事準備中」的是已經預約進來、正在整理逐字紀錄的新個案，敬請期待。</p>
       </div>
 
       <div class="filter-row">
@@ -66,6 +67,9 @@
         <!-- 1 偷偷 -->
         <details class="case" data-tags="貓">
           <summary>
+            <div class="case-photo">
+              <img src="images/cases/toutou.jpg" alt="偷偷的照片" loading="lazy" onerror="handlePhotoError(this)">
+            </div>
             <div class="strip" aria-hidden="true">
               <div class="frame"><svg viewBox="0 0 24 24"><path d="M4 20c2-3 4-3 5-6M9 20c1-4 2-4 3-8M14 20c1-3 2-5 2-8M19 20c0-3 1-5 1-9"/></svg></div>
               <div class="frame"><svg viewBox="0 0 24 24"><path d="M16 4c-4.5 1-7 5-7 9 0 3.5 2.5 6.5 6 7-5.5 1-11-3-11-9 0-6 5-9 9-9 1 0 2 .3 3 .7 0 .4 0 .9 0 1.3z"/></svg></div>
@@ -89,9 +93,12 @@
           </div>
         </details>
 
-        <!-- 2 小畢 -->
-        <details class="case" data-tags="貓">
+        <!-- 2 小貝 -->
+        <details class="case" data-tags="狗">
           <summary>
+            <div class="case-photo">
+              <img src="images/cases/xiaobei.jpg" alt="小貝的照片" loading="lazy" onerror="handlePhotoError(this)">
+            </div>
             <div class="strip" aria-hidden="true">
               <div class="frame"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M4 12H1M23 12h-3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1"/></svg></div>
               <div class="frame"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="1"/><path d="M4 12h16M12 4v16"/></svg></div>
@@ -99,15 +106,15 @@
               <div class="frame"><svg viewBox="0 0 24 24"><path d="M12 3c1.5 2 1.5 4 0 6-1.5-2-1.5-4 0-6zM12 9v11M8 14c2 .5 3 1.5 4 3M16 14c-2 .5-3 1.5-4 3"/></svg></div>
             </div>
             <div class="case-meta">
-              <p class="case-tag mono">貓 · 安寧陪伴 · 2022.10</p>
-              <h3 class="case-name">小畢｜牠說，牠準備好了</h3>
-              <p class="case-teaser">18歲的老貓，懶洋洋地趴著，家人不敢問「還好嗎」，怕聽到不想聽的答案。</p>
+              <p class="case-tag mono">狗 · 安寧陪伴 · 2022.10</p>
+              <h3 class="case-name">小貝｜牠說，牠準備好了</h3>
+              <p class="case-teaser">18歲的老狗，懶洋洋地趴著，家人不敢問「還好嗎」，怕聽到不想聽的答案。</p>
             </div>
             <span class="case-toggle mono"></span>
           </summary>
           <div class="case-body">
             <div class="letter">
-              <p>小畢的照護人只提了一個心願：希望牠知道，時間到了可以安心離開，不用為了誰硬撐。連線上的小畢很平靜，眼神柔和，說身體有點懶洋洋、睡得比較多，但不痛，暖暖的，很舒服。</p>
+              <p>小貝的照護人只提了一個心願：希望牠知道，時間到了可以安心離開，不用為了誰硬撐。連線上的小貝很平靜，眼神柔和，說身體有點懶洋洋、睡得比較多，但不痛，暖暖的，很舒服。</p>
               <p>牠說吃得下一點點就滿足了，剩下的力氣想留著，用來多看看這個家、多聽聽家人的聲音，記住屋子裡每一個小細節。</p>
               <p class="quote-line">「打針最痛了，但我現在不用擔心那個了。我喜歡現在的溫度和環境，喜歡陪在他們身邊，我已經準備好了，謝謝收留我。」</p>
               <p>牠也請家人放心——牠說變成靈體之後會很輕鬆，偶爾還是會回來看看。這場溝通沒有讓誰不再難過，但讓「放手」這件事，多了一點點的心安。</p>
@@ -118,6 +125,9 @@
         <!-- 3 阿臉 -->
         <details class="case" data-tags="貓">
           <summary>
+            <div class="case-photo">
+              <img src="images/cases/alian.jpg" alt="阿臉的照片" loading="lazy" onerror="handlePhotoError(this)">
+            </div>
             <div class="strip" aria-hidden="true">
               <div class="frame"><svg viewBox="0 0 24 24"><path d="M3 20V9l6-5 6 5v11M9 20v-6h4v6M15 20V4l6 3v13"/></svg></div>
               <div class="frame"><svg viewBox="0 0 24 24"><path d="M4 15c2-6 6-9 8-9s6 3 8 9c-2 2-5 3-8 3s-6-1-8-3z"/></svg></div>
@@ -144,6 +154,9 @@
         <!-- 4 珠珠 -->
         <details class="case" data-tags="貓">
           <summary>
+            <div class="case-photo">
+              <img src="images/cases/zhuzhu.jpg" alt="珠珠的照片" loading="lazy" onerror="handlePhotoError(this)">
+            </div>
             <div class="strip" aria-hidden="true">
               <div class="frame"><svg viewBox="0 0 24 24"><circle cx="9" cy="12" r="6"/><circle cx="15" cy="12" r="6" opacity=".5"/></svg></div>
               <div class="frame"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/><path d="M12 4v16" opacity=".5"/></svg></div>
@@ -170,6 +183,9 @@
         <!-- 5 Biron -->
         <details class="case" data-tags="狗">
           <summary>
+            <div class="case-photo">
+              <img src="images/cases/biron.jpg" alt="Biron的照片" loading="lazy" onerror="handlePhotoError(this)">
+            </div>
             <div class="strip" aria-hidden="true">
               <div class="frame"><svg viewBox="0 0 24 24"><path d="M3 12h18" stroke-dasharray="2 3"/><path d="M9 6l-6 6 6 6M18 9v6" /></svg></div>
               <div class="frame"><svg viewBox="0 0 24 24"><path d="M12 3l2.2 5 5.3.5-4 3.6 1.2 5.2L12 14.8 7.3 17.3l1.2-5.2-4-3.6 5.3-.5z"/></svg></div>
@@ -196,6 +212,9 @@
         <!-- 6 Killua -->
         <details class="case" data-tags="狗">
           <summary>
+            <div class="case-photo">
+              <img src="images/cases/killua.jpg" alt="Killua的照片" loading="lazy" onerror="handlePhotoError(this)">
+            </div>
             <div class="strip" aria-hidden="true">
               <div class="frame"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/></svg></div>
               <div class="frame"><svg viewBox="0 0 24 24"><path d="M12 4c3 4 5 7 5 10a5 5 0 0 1-10 0c0-3 2-6 5-10z"/></svg></div>
@@ -222,6 +241,9 @@
         <!-- 7 咪咪 -->
         <details class="case" data-tags="貓">
           <summary>
+            <div class="case-photo">
+              <img src="images/cases/mimi.jpg" alt="咪咪的照片" loading="lazy" onerror="handlePhotoError(this)">
+            </div>
             <div class="strip" aria-hidden="true">
               <div class="frame"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="1"/><path d="M4 12h16M12 4v16"/></svg></div>
               <div class="frame"><svg viewBox="0 0 24 24"><rect x="5" y="9" width="14" height="10" rx="1"/><circle cx="9" cy="14" r="1.6" fill="#9FBECE" stroke="none"/></svg></div>
@@ -248,6 +270,9 @@
         <!-- 8 奴比 -->
         <details class="case" data-tags="狗">
           <summary>
+            <div class="case-photo">
+              <img src="images/cases/nubi.jpg" alt="奴比的照片" loading="lazy" onerror="handlePhotoError(this)">
+            </div>
             <div class="strip" aria-hidden="true">
               <div class="frame"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg></div>
               <div class="frame"><svg viewBox="0 0 24 24"><path d="M4 14c2-4 4 2 6-2s4 4 6-2 4 2 4-2" /></svg></div>
@@ -274,6 +299,9 @@
         <!-- 9 丁丁 -->
         <details class="case" data-tags="貓">
           <summary>
+            <div class="case-photo">
+              <img src="images/cases/dingding.jpg" alt="丁丁的照片" loading="lazy" onerror="handlePhotoError(this)">
+            </div>
             <div class="strip" aria-hidden="true">
               <div class="frame"><svg viewBox="0 0 24 24"><path d="M4 15c2-6 6-9 8-9s6 3 8 9c-2 2-5 3-8 3s-6-1-8-3z"/></svg></div>
               <div class="frame"><svg viewBox="0 0 24 24"><circle cx="9" cy="12" r="5"/><circle cx="15" cy="12" r="5" opacity=".5"/></svg></div>
@@ -300,6 +328,9 @@
         <!-- 10 Qbi -->
         <details class="case" data-tags="狗">
           <summary>
+            <div class="case-photo">
+              <img src="images/cases/qbi.jpg" alt="Qbi的照片" loading="lazy" onerror="handlePhotoError(this)">
+            </div>
             <div class="strip" aria-hidden="true">
               <div class="frame"><svg viewBox="0 0 24 24"><circle cx="9" cy="12" r="3"/><circle cx="16" cy="12" r="6" opacity=".5"/></svg></div>
               <div class="frame"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3" stroke-dasharray="2 2"/><circle cx="12" cy="12" r="9" stroke-dasharray="2 3" opacity=".4"/></svg></div>
@@ -326,6 +357,9 @@
         <!-- 11 Cony -->
         <details class="case" data-tags="兔">
           <summary>
+            <div class="case-photo">
+              <img src="images/cases/cony.jpg" alt="Cony的照片" loading="lazy" onerror="handlePhotoError(this)">
+            </div>
             <div class="strip" aria-hidden="true">
               <div class="frame"><svg viewBox="0 0 24 24"><path d="M4 18c2-1 4-1 6 0M14 18c2-1 4-1 6 0M4 14c2-1 4-1 6 0M14 14c2-1 4-1 6 0" /></svg></div>
               <div class="frame"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="2" fill="#9FBECE" stroke="none"/><circle cx="12" cy="12" r="5" stroke-dasharray="2 3"/><circle cx="12" cy="12" r="9" stroke-dasharray="2 4" opacity=".4"/></svg></div>
@@ -352,6 +386,9 @@
         <!-- 12 Mio -->
         <details class="case" data-tags="貓">
           <summary>
+            <div class="case-photo">
+              <img src="images/cases/mio.jpg" alt="Mio 咪歐的照片" loading="lazy" onerror="handlePhotoError(this)">
+            </div>
             <div class="strip" aria-hidden="true">
               <div class="frame"><svg viewBox="0 0 24 24"><path d="M4 6h16M4 10h16M4 14h16M4 18h16" opacity=".5"/></svg></div>
               <div class="frame"><svg viewBox="0 0 24 24"><circle cx="7" cy="7" r="1.4" fill="#9FBECE" stroke="none"/><circle cx="12" cy="7" r="1.4" fill="#9FBECE" stroke="none"/><circle cx="17" cy="7" r="1.4" fill="#9FBECE" stroke="none"/><circle cx="7" cy="13" r="1.4" fill="#9FBECE" stroke="none"/><circle cx="12" cy="13" r="1.4" fill="#9FBECE" stroke="none"/><circle cx="17" cy="13" r="1.4" fill="#9FBECE" stroke="none"/></svg></div>
@@ -374,6 +411,295 @@
             </div>
           </div>
         </details>
+
+        <div class="case placeholder" data-tags="貓">
+          <div class="case-row">
+            <div class="case-photo">
+              <img src="images/cases/xiaoshan.jpg" alt="小山的照片" loading="lazy" onerror="handlePhotoError(this)">
+            </div>
+            <div class="strip" aria-hidden="true">
+              <div class="frame"></div><div class="frame"></div><div class="frame"></div><div class="frame"></div>
+            </div>
+            <div class="case-meta">
+              <p class="case-tag mono pending">貓 · 故事準備中</p>
+              <h3 class="case-name">小山</h3>
+              <p class="case-teaser">牠的故事正在整理，敬請期待。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="case placeholder" data-tags="貓">
+          <div class="case-row">
+            <div class="case-photo">
+              <img src="images/cases/ludou.jpg" alt="綠豆的照片" loading="lazy" onerror="handlePhotoError(this)">
+            </div>
+            <div class="strip" aria-hidden="true">
+              <div class="frame"></div><div class="frame"></div><div class="frame"></div><div class="frame"></div>
+            </div>
+            <div class="case-meta">
+              <p class="case-tag mono pending">貓 · 故事準備中</p>
+              <h3 class="case-name">綠豆</h3>
+              <p class="case-teaser">牠的故事正在整理，敬請期待。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="case placeholder" data-tags="貓">
+          <div class="case-row">
+            <div class="case-photo">
+              <img src="images/cases/mozi.jpg" alt="墨子的照片" loading="lazy" onerror="handlePhotoError(this)">
+            </div>
+            <div class="strip" aria-hidden="true">
+              <div class="frame"></div><div class="frame"></div><div class="frame"></div><div class="frame"></div>
+            </div>
+            <div class="case-meta">
+              <p class="case-tag mono pending">貓 · 故事準備中</p>
+              <h3 class="case-name">墨子</h3>
+              <p class="case-teaser">牠的故事正在整理，敬請期待。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="case placeholder" data-tags="貓">
+          <div class="case-row">
+            <div class="case-photo">
+              <img src="images/cases/xiaobo.jpg" alt="小波的照片" loading="lazy" onerror="handlePhotoError(this)">
+            </div>
+            <div class="strip" aria-hidden="true">
+              <div class="frame"></div><div class="frame"></div><div class="frame"></div><div class="frame"></div>
+            </div>
+            <div class="case-meta">
+              <p class="case-tag mono pending">貓 · 故事準備中</p>
+              <h3 class="case-name">小波</h3>
+              <p class="case-teaser">牠的故事正在整理，敬請期待。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="case placeholder" data-tags="貓">
+          <div class="case-row">
+            <div class="case-photo">
+              <img src="images/cases/gege.jpg" alt="哥哥的照片" loading="lazy" onerror="handlePhotoError(this)">
+            </div>
+            <div class="strip" aria-hidden="true">
+              <div class="frame"></div><div class="frame"></div><div class="frame"></div><div class="frame"></div>
+            </div>
+            <div class="case-meta">
+              <p class="case-tag mono pending">貓 · 故事準備中</p>
+              <h3 class="case-name">哥哥</h3>
+              <p class="case-teaser">牠的故事正在整理，敬請期待。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="case placeholder" data-tags="貓">
+          <div class="case-row">
+            <div class="case-photo">
+              <img src="images/cases/mama.jpg" alt="瑪瑪的照片" loading="lazy" onerror="handlePhotoError(this)">
+            </div>
+            <div class="strip" aria-hidden="true">
+              <div class="frame"></div><div class="frame"></div><div class="frame"></div><div class="frame"></div>
+            </div>
+            <div class="case-meta">
+              <p class="case-tag mono pending">貓 · 故事準備中</p>
+              <h3 class="case-name">瑪瑪</h3>
+              <p class="case-teaser">牠的故事正在整理，敬請期待。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="case placeholder" data-tags="貓">
+          <div class="case-row">
+            <div class="case-photo">
+              <img src="images/cases/lulu.jpg" alt="露露的照片" loading="lazy" onerror="handlePhotoError(this)">
+            </div>
+            <div class="strip" aria-hidden="true">
+              <div class="frame"></div><div class="frame"></div><div class="frame"></div><div class="frame"></div>
+            </div>
+            <div class="case-meta">
+              <p class="case-tag mono pending">貓 · 故事準備中</p>
+              <h3 class="case-name">露露</h3>
+              <p class="case-teaser">牠的故事正在整理，敬請期待。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="case placeholder" data-tags="貓">
+          <div class="case-row">
+            <div class="case-photo">
+              <img src="images/cases/kiki.jpg" alt="Kiki的照片" loading="lazy" onerror="handlePhotoError(this)">
+            </div>
+            <div class="strip" aria-hidden="true">
+              <div class="frame"></div><div class="frame"></div><div class="frame"></div><div class="frame"></div>
+            </div>
+            <div class="case-meta">
+              <p class="case-tag mono pending">貓 · 故事準備中</p>
+              <h3 class="case-name">Kiki</h3>
+              <p class="case-teaser">牠的故事正在整理，敬請期待。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="case placeholder" data-tags="狗">
+          <div class="case-row">
+            <div class="case-photo">
+              <img src="images/cases/lucky.jpg" alt="Lucky的照片" loading="lazy" onerror="handlePhotoError(this)">
+            </div>
+            <div class="strip" aria-hidden="true">
+              <div class="frame"></div><div class="frame"></div><div class="frame"></div><div class="frame"></div>
+            </div>
+            <div class="case-meta">
+              <p class="case-tag mono pending">狗 · 故事準備中</p>
+              <h3 class="case-name">Lucky</h3>
+              <p class="case-teaser">牠的故事正在整理，敬請期待。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="case placeholder" data-tags="狗">
+          <div class="case-row">
+            <div class="case-photo">
+              <img src="images/cases/xiduo.jpg" alt="喜多的照片" loading="lazy" onerror="handlePhotoError(this)">
+            </div>
+            <div class="strip" aria-hidden="true">
+              <div class="frame"></div><div class="frame"></div><div class="frame"></div><div class="frame"></div>
+            </div>
+            <div class="case-meta">
+              <p class="case-tag mono pending">狗 · 故事準備中</p>
+              <h3 class="case-name">喜多</h3>
+              <p class="case-teaser">牠的故事正在整理，敬請期待。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="case placeholder" data-tags="狗">
+          <div class="case-row">
+            <div class="case-photo">
+              <img src="images/cases/doudou.jpg" alt="兜兜的照片" loading="lazy" onerror="handlePhotoError(this)">
+            </div>
+            <div class="strip" aria-hidden="true">
+              <div class="frame"></div><div class="frame"></div><div class="frame"></div><div class="frame"></div>
+            </div>
+            <div class="case-meta">
+              <p class="case-tag mono pending">狗 · 故事準備中</p>
+              <h3 class="case-name">兜兜</h3>
+              <p class="case-teaser">牠的故事正在整理，敬請期待。</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="case placeholder" data-tags="狗">
+          <div class="case-row">
+            <div class="case-photo">
+              <img src="images/cases/mantou.jpg" alt="饅頭的照片" loading="lazy" onerror="handlePhotoError(this)">
+            </div>
+            <div class="strip" aria-hidden="true">
+              <div class="frame"></div><div class="frame"></div><div class="frame"></div><div class="frame"></div>
+            </div>
+            <div class="case-meta">
+              <p class="case-tag mono pending">狗 · 故事準備中</p>
+              <h3 class="case-name">饅頭</h3>
+              <p class="case-teaser">牠的故事正在整理，敬請期待。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="case placeholder" data-tags="貓">
+          <div class="case-row">
+            <div class="case-photo">
+              <img src="images/cases/mibeng.jpg" alt="咪蹦的照片" loading="lazy" onerror="handlePhotoError(this)">
+            </div>
+            <div class="strip" aria-hidden="true">
+              <div class="frame"></div><div class="frame"></div><div class="frame"></div><div class="frame"></div>
+            </div>
+            <div class="case-meta">
+              <p class="case-tag mono pending">貓 · 故事準備中</p>
+              <h3 class="case-name">咪蹦</h3>
+              <p class="case-teaser">牠的故事正在整理，敬請期待。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="case placeholder" data-tags="貓">
+          <div class="case-row">
+            <div class="case-photo">
+              <img src="images/cases/huahua.jpg" alt="花花的照片" loading="lazy" onerror="handlePhotoError(this)">
+            </div>
+            <div class="strip" aria-hidden="true">
+              <div class="frame"></div><div class="frame"></div><div class="frame"></div><div class="frame"></div>
+            </div>
+            <div class="case-meta">
+              <p class="case-tag mono pending">貓 · 故事準備中</p>
+              <h3 class="case-name">花花</h3>
+              <p class="case-teaser">牠的故事正在整理，敬請期待。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="case placeholder" data-tags="貓">
+          <div class="case-row">
+            <div class="case-photo">
+              <img src="images/cases/meimei.jpg" alt="妹妹的照片" loading="lazy" onerror="handlePhotoError(this)">
+            </div>
+            <div class="strip" aria-hidden="true">
+              <div class="frame"></div><div class="frame"></div><div class="frame"></div><div class="frame"></div>
+            </div>
+            <div class="case-meta">
+              <p class="case-tag mono pending">貓 · 故事準備中</p>
+              <h3 class="case-name">妹妹</h3>
+              <p class="case-teaser">牠的故事正在整理，敬請期待。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="case placeholder" data-tags="貓">
+          <div class="case-row">
+            <div class="case-photo">
+              <img src="images/cases/lanbao.jpg" alt="藍寶的照片" loading="lazy" onerror="handlePhotoError(this)">
+            </div>
+            <div class="strip" aria-hidden="true">
+              <div class="frame"></div><div class="frame"></div><div class="frame"></div><div class="frame"></div>
+            </div>
+            <div class="case-meta">
+              <p class="case-tag mono pending">貓 · 故事準備中</p>
+              <h3 class="case-name">藍寶</h3>
+              <p class="case-teaser">牠的故事正在整理，敬請期待。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="case placeholder" data-tags="貓">
+          <div class="case-row">
+            <div class="case-photo">
+              <img src="images/cases/rainbow.jpg" alt="Rainbow的照片" loading="lazy" onerror="handlePhotoError(this)">
+            </div>
+            <div class="strip" aria-hidden="true">
+              <div class="frame"></div><div class="frame"></div><div class="frame"></div><div class="frame"></div>
+            </div>
+            <div class="case-meta">
+              <p class="case-tag mono pending">貓 · 故事準備中</p>
+              <h3 class="case-name">Rainbow</h3>
+              <p class="case-teaser">牠的故事正在整理，敬請期待。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="case placeholder" data-tags="貓">
+          <div class="case-row">
+            <div class="case-photo">
+              <img src="images/cases/lele.jpg" alt="樂樂的照片" loading="lazy" onerror="handlePhotoError(this)">
+            </div>
+            <div class="strip" aria-hidden="true">
+              <div class="frame"></div><div class="frame"></div><div class="frame"></div><div class="frame"></div>
+            </div>
+            <div class="case-meta">
+              <p class="case-tag mono pending">貓 · 故事準備中</p>
+              <h3 class="case-name">樂樂</h3>
+              <p class="case-teaser">牠的故事正在整理，敬請期待。</p>
+            </div>
+          </div>
+        </div>
 
       </div>
     </div>
