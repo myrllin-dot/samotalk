@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>牠比我們更早準備好說再見｜SAMO TALK 薩摩白</title>
 <meta name="description" content="整理多個安寧陪伴與離世溝通個案裡，動物們共同的心聲，陪伴照護人練習用牠們的節奏，去理解「放手」這件事。">
-<link rel="canonical" href="https://samotalk.com/article-goodbye.html">
+<link rel="canonical" href="https://samotalk.com/article-goodbye">
 <meta property="og:title" content="牠比我們更早準備好說再見｜SAMO TALK 薩摩白">
 <meta property="og:type" content="article">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,7 +20,7 @@
   "description": "整理多個安寧陪伴與離世溝通個案，理解動物面對告別的節奏，陪伴照護人練習放手。",
   "author": {"@type":"Organization","name":"SAMO TALK 薩摩白"},
   "publisher": {"@type":"Organization","name":"SAMO TALK 薩摩白"},
-  "mainEntityOfPage": "https://samotalk.com/article-goodbye.html",
+  "mainEntityOfPage": "https://samotalk.com/article-goodbye",
   "datePublished": "2026-07-01",
   "inLanguage": "zh-Hant"
 }
@@ -30,21 +30,21 @@
 
 <header class="site">
   <div class="nav-inner">
-    <a href="index.html" class="brand">
+    <a href="index" class="brand">
       <span class="mark">SAMO TALK</span>
       <span class="cn">薩摩白</span>
     </a>
     <nav class="links">
-      <a href="index.html#about">什麼是動物溝通</a>
-      <a href="cases.html">個案的信</a>
-      <a href="index.html#quiz">小測驗</a>
-      <a href="articles.html" class="active">好文分享</a>
-      <a href="index.html#apply">申請個案</a>
+      <a href="index#about">什麼是動物溝通</a>
+      <a href="cases">個案的信</a>
+      <a href="index#quiz">小測驗</a>
+      <a href="articles" class="active">好文分享</a>
+      <a href="index#apply">申請個案</a>
     </nav>
   </div>
 </header>
 
-<div class="wrap crumb"><a href="index.html">首頁</a><span>/</span><a href="articles.html">好文分享</a><span>/</span>告別與安寧</div>
+<div class="wrap crumb"><a href="index">首頁</a><span>/</span><a href="articles">好文分享</a><span>/</span>告別與安寧</div>
 
 <main>
   <section class="article-hero">
@@ -94,12 +94,12 @@
 
       <div class="article-cta">
         <p>想聽聽牠此刻真正的心情，或是想跟已經離開的牠，再說一次話嗎？</p>
-        <a href="index.html#apply" class="btn primary small">申請安寧或離世溝通</a>
+        <a href="index#apply" class="btn primary small">申請安寧或離世溝通</a>
       </div>
 
       <div class="article-nav wrap" style="max-width:var(--measure);">
-        <a href="article-territory.html">← 上一篇：地盤與安全感</a>
-        <a href="articles.html">回文章庫 →</a>
+        <a href="article-territory">← 上一篇：地盤與安全感</a>
+        <a href="articles">回文章庫 →</a>
       </div>
     </div>
   </section>
@@ -112,10 +112,10 @@
       <p style="margin:0;">用文字翻譯動物的心聲。</p>
     </div>
     <div>
-      <a href="index.html#about">關於</a>
-      <a href="cases.html">個案</a>
-      <a href="articles.html">文章</a>
-      <a href="index.html#apply">申請</a>
+      <a href="index#about">關於</a>
+      <a href="cases">個案</a>
+      <a href="articles">文章</a>
+      <a href="index#apply">申請</a>
     </div>
   </div>
 </footer>
