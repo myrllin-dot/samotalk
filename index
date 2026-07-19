@@ -74,16 +74,16 @@
 
 <header class="site">
   <div class="nav-inner">
-    <a href="index.html" class="brand">
+    <a href="index" class="brand">
       <span class="mark">SAMO TALK</span>
       <span class="cn">薩摩白</span>
     </a>
     <nav class="links">
-      <a href="index.html#about">什麼是動物溝通</a>
-      <a href="cases.html">個案的信</a>
-      <a href="index.html#quiz">小測驗</a>
-      <a href="articles.html">好文分享</a>
-      <a href="index.html#apply">申請個案</a>
+      <a href="index#about">什麼是動物溝通</a>
+      <a href="cases">個案的信</a>
+      <a href="index#quiz">小測驗</a>
+      <a href="articles">好文分享</a>
+      <a href="index#apply">申請個案</a>
     </nav>
   </div>
 </header>
@@ -99,7 +99,7 @@
         <p class="lead">SAMO TALK 薩摩白，用文字把貓、狗、兔子想告訴你的事，一句一句翻譯出來。不談玄學噱頭，只談牠們真正在意的：安全感、地盤、氣味、還有你有沒有看懂牠的沈默。</p>
         <div class="cta-row">
           <a href="#apply" class="btn primary">申請動物溝通個案</a>
-          <a href="cases.html" class="btn ghost">先看看真實個案 →</a>
+          <a href="cases" class="btn ghost">先看看真實個案 →</a>
         </div>
       </div>
       <div class="hero-visual" aria-hidden="true">
@@ -329,7 +329,7 @@
       </div>
 
       <div style="text-align:center; margin-top:52px;">
-        <a href="cases.html" class="btn ghost">查看完整個案檔案室（12篇）→</a>
+        <a href="cases" class="btn ghost">查看完整個案檔案室（12篇）→</a>
       </div>
     </div>
   </section>
@@ -406,19 +406,19 @@
         <p>不講艱澀理論，只講日常裡真正用得到、也貼近牠們感受的觀點。</p>
       </div>
       <div class="article-grid">
-        <a class="article-card" href="article-scent-memory.html">
+        <a class="article-card" href="article-scent-memory">
           <p class="cat mono">行為 · 分離焦慮</p>
           <h3>牠不是記仇，是身體記得那個氣味</h3>
           <p>從動物的嗅覺記憶出發，理解為什麼牠會對某個角落、某件衣服特別執著，而這往往和「安全感」有關，而不是任性。</p>
           <span class="read">閱讀全文</span>
         </a>
-        <a class="article-card" href="article-territory.html">
+        <a class="article-card" href="article-territory">
           <p class="cat mono">多貓多狗家庭</p>
           <h3>「地盤」對牠來說，其實是安全感的另一個名字</h3>
           <p>從珠珠與阿臉的個案延伸，聊聊多動物家庭裡最常被誤解的「爭寵」，背後其實是資源與空間感的重新分配。</p>
           <span class="read">閱讀全文</span>
         </a>
-        <a class="article-card" href="article-goodbye.html">
+        <a class="article-card" href="article-goodbye">
           <p class="cat mono">告別與安寧</p>
           <h3>牠比我們更早準備好說再見</h3>
           <p>整理多個安寧陪伴個案裡，動物們共同的心聲，陪伴照護人練習用牠們的節奏，去理解「放手」這件事。</p>
@@ -426,7 +426,7 @@
         </a>
       </div>
       <div style="text-align:center; margin-top:44px;">
-        <a href="articles.html" class="btn ghost">前往完整文章庫 →</a>
+        <a href="articles" class="btn ghost">前往完整文章庫 →</a>
       </div>
     </div>
   </section>
@@ -470,10 +470,10 @@
       <p style="margin:0;">用文字翻譯動物的心聲。</p>
     </div>
     <div>
-      <a href="index.html#about">關於</a>
-      <a href="cases.html">個案</a>
-      <a href="articles.html">文章</a>
-      <a href="index.html#apply">申請</a>
+      <a href="index#about">關於</a>
+      <a href="cases">個案</a>
+      <a href="articles">文章</a>
+      <a href="index#apply">申請</a>
     </div>
   </div>
 </footer>
