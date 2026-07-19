@@ -35,16 +35,16 @@
       <span class="cn">薩摩白</span>
     </a>
     <nav class="links">
-      <a href="index.html#about">什麼是動物溝通</a>
-      <a href="cases.html">個案的信</a>
-      <a href="index.html#quiz">小測驗</a>
-      <a href="articles.html" class="active">好文分享</a>
-      <a href="index.html#apply">申請個案</a>
+      <a href="index.#about">什麼是動物溝通</a>
+      <a href="cases">個案的信</a>
+      <a href="index#quiz">小測驗</a>
+      <a href="articles" class="active">好文分享</a>
+      <a href="index#apply">申請個案</a>
     </nav>
   </div>
 </header>
 
-<div class="wrap crumb"><a href="index.html">首頁</a><span>/</span><a href="articles.html">好文分享</a><span>/</span>氣味記憶</div>
+<div class="wrap crumb"><a href="index">首頁</a><span>/</span><a href="articles">好文分享</a><span>/</span>氣味記憶</div>
 
 <main>
   <section class="article-hero">
@@ -88,12 +88,12 @@
 
       <div class="article-cta">
         <p>想知道牠現在最在意的氣味、角落，或是那個說不出口的分離焦慮背後真正的原因嗎？</p>
-        <a href="index.html#apply" class="btn primary small">申請一次動物溝通</a>
+        <a href="index#apply" class="btn primary small">申請一次動物溝通</a>
       </div>
 
       <div class="article-nav wrap" style="max-width:var(--measure);">
-        <a href="articles.html">← 回文章庫</a>
-        <a href="article-territory.html">下一篇：地盤是安全感的另一個名字 →</a>
+        <a href="articles">← 回文章庫</a>
+        <a href="article-territory">下一篇：地盤是安全感的另一個名字 →</a>
       </div>
     </div>
   </section>
@@ -106,10 +106,10 @@
       <p style="margin:0;">用文字翻譯動物的心聲。</p>
     </div>
     <div>
-      <a href="index.html#about">關於</a>
-      <a href="cases.html">個案</a>
-      <a href="articles.html">文章</a>
-      <a href="index.html#apply">申請</a>
+      <a href="index#about">關於</a>
+      <a href="cases">個案</a>
+      <a href="articles">文章</a>
+      <a href="index#apply">申請</a>
     </div>
   </div>
 </footer>
