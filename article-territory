@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>「地盤」對牠來說，其實是安全感的另一個名字｜SAMO TALK 薩摩白</title>
 <meta name="description" content="多貓多狗家庭裡最常被誤解的「爭寵」，背後其實是資源與空間感的重新分配。從珠珠、阿臉、丁丁的個案，理解地盤對動物的真正意義。">
-<link rel="canonical" href="https://samotalk.com/article-territory.html">
+<link rel="canonical" href="https://samotalk.com/article-territory">
 <meta property="og:title" content="「地盤」對牠來說，其實是安全感的另一個名字｜SAMO TALK 薩摩白">
 <meta property="og:type" content="article">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,7 +20,7 @@
   "description": "從珠珠、阿臉、丁丁的個案，理解多貓多狗家庭裡地盤與爭寵行為背後的真正需求。",
   "author": {"@type":"Organization","name":"SAMO TALK 薩摩白"},
   "publisher": {"@type":"Organization","name":"SAMO TALK 薩摩白"},
-  "mainEntityOfPage": "https://samotalk.com/article-territory.html",
+  "mainEntityOfPage": "https://samotalk.com/article-territory",
   "datePublished": "2026-07-01",
   "inLanguage": "zh-Hant"
 }
@@ -30,21 +30,21 @@
 
 <header class="site">
   <div class="nav-inner">
-    <a href="index.html" class="brand">
+    <a href="index" class="brand">
       <span class="mark">SAMO TALK</span>
       <span class="cn">薩摩白</span>
     </a>
     <nav class="links">
-      <a href="index.html#about">什麼是動物溝通</a>
-      <a href="cases.html">個案的信</a>
-      <a href="index.html#quiz">小測驗</a>
-      <a href="articles.html" class="active">好文分享</a>
-      <a href="index.html#apply">申請個案</a>
+      <a href="index#about">什麼是動物溝通</a>
+      <a href="cases">個案的信</a>
+      <a href="index#quiz">小測驗</a>
+      <a href="articles" class="active">好文分享</a>
+      <a href="index#apply">申請個案</a>
     </nav>
   </div>
 </header>
 
-<div class="wrap crumb"><a href="index.html">首頁</a><span>/</span><a href="articles.html">好文分享</a><span>/</span>地盤與安全感</div>
+<div class="wrap crumb"><a href="index">首頁</a><span>/</span><a href="articles">好文分享</a><span>/</span>地盤與安全感</div>
 
 <main>
   <section class="article-hero">
@@ -95,12 +95,12 @@
 
       <div class="article-cta">
         <p>想知道你家裡的動物們，此刻真正在意的地盤與位置是什麼嗎？</p>
-        <a href="index.html#apply" class="btn primary small">申請一次動物溝通</a>
+        <a href="index#apply" class="btn primary small">申請一次動物溝通</a>
       </div>
 
       <div class="article-nav wrap" style="max-width:var(--measure);">
-        <a href="article-scent-memory.html">← 上一篇：氣味記憶</a>
-        <a href="article-goodbye.html">下一篇：牠比我們更早準備好說再見 →</a>
+        <a href="article-scent-memory">← 上一篇：氣味記憶</a>
+        <a href="article-goodbye">下一篇：牠比我們更早準備好說再見 →</a>
       </div>
     </div>
   </section>
@@ -113,10 +113,10 @@
       <p style="margin:0;">用文字翻譯動物的心聲。</p>
     </div>
     <div>
-      <a href="index.html#about">關於</a>
-      <a href="cases.html">個案</a>
-      <a href="articles.html">文章</a>
-      <a href="index.html#apply">申請</a>
+      <a href="index#about">關於</a>
+      <a href="cases">個案</a>
+      <a href="articles">文章</a>
+      <a href="index#apply">申請</a>
     </div>
   </div>
 </footer>
