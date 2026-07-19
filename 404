@@ -19,7 +19,7 @@
 <body>
 <header class="site">
   <div class="nav-inner">
-    <a href="index.html" class="brand">
+    <a href="index" class="brand">
       <span class="mark">SAMO TALK</span>
       <span class="cn">薩摩白</span>
     </a>
@@ -32,7 +32,7 @@
     </svg>
     <h1 class="serif">牠走過這裡，但沒留下這一頁</h1>
     <p>你要找的頁面不存在，也許是網址打錯了，或連結已經更新。回首頁看看目前的個案故事和文章吧。</p>
-    <a href="index.html" class="btn primary">回到首頁</a>
+    <a href="index" class="btn primary">回到首頁</a>
   </div>
 </main>
 <footer>
