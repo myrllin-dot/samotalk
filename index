@@ -74,7 +74,7 @@
 
 <header class="site">
   <div class="nav-inner">
-    <a href="index" class="brand">
+    <a href="index.html" class="brand">
       <span class="mark">SAMO TALK</span>
       <span class="cn">薩摩白</span>
     </a>
