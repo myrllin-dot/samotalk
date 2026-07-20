@@ -170,10 +170,26 @@ details.faq p{color:var(--ink-soft); font-size:14.5px; margin:14px 0 4px; max-wi
 .case-list{display:flex; flex-direction:column; gap:2px; background:var(--line);}
 .case{background:var(--paper); padding:34px 30px; transition:opacity .2s ease;}
 .case.hidden{display:none;}
-.case summary{list-style:none; display:flex; gap:24px; align-items:flex-start; cursor:pointer;}
+.case summary, .case .case-row{list-style:none; display:flex; gap:16px; align-items:center; cursor:pointer;}
 .case summary::-webkit-details-marker{display:none;}
+.case.placeholder{cursor:default;}
+.case.placeholder .case-row{cursor:default; align-items:center;}
+.case.placeholder .case-photo{box-shadow:0 0 0 1px var(--line), 0 0 0 3px var(--paper); opacity:.7;}
+.case.placeholder .strip .frame{border-style:dashed; background:transparent;}
+.case.placeholder .strip .frame svg{opacity:.25;}
+.case-tag.pending{color:var(--ink-soft) !important;}
+.case.placeholder .case-name{color:var(--ink-soft); font-weight:600;}
+.case.placeholder .case-teaser{font-style:italic;}
+.case-photo{
+  width:44px; height:44px; flex:none; border-radius:50%; overflow:hidden;
+  box-shadow:0 0 0 1px var(--line), 0 0 0 3px var(--paper); background:var(--paper-2);
+}
+.case-photo img{width:100%; height:100%; object-fit:cover; display:block;}
+.case-photo.photo-fallback{display:flex; align-items:center; justify-content:center;}
+.case-photo.photo-fallback::after{content:'🐾'; font-size:16px; opacity:.32; filter:grayscale(1);}
+@media (max-width:600px){ .case-photo{width:36px; height:36px;} .case-photo.photo-fallback::after{font-size:13px;} }
 .strip{display:grid; grid-template-columns:repeat(4,1fr); gap:6px; width:132px; flex:none;}
-@media (max-width:600px){.strip{width:96px;} .case summary{flex-wrap:wrap;} .case-toggle{margin-left:0 !important;}}
+@media (max-width:600px){.strip{width:96px;} .case summary{flex-wrap:wrap; align-items:flex-start;} .case-toggle{margin-left:0 !important;}}
 .frame{
   aspect-ratio:1/1; border:1px solid var(--line); border-radius:var(--radius);
   display:flex; align-items:center; justify-content:center; background:var(--paper-2);
