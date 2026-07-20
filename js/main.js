@@ -1,3 +1,40 @@
+// ============ 手機版選單開關 ============
+(function(){
+  var toggle = document.getElementById('menuToggle');
+  var nav = document.getElementById('navLinks');
+  if(!toggle || !nav) return;
+
+  function closeMenu(){
+    nav.classList.remove('open');
+    toggle.classList.remove('is-open');
+    toggle.setAttribute('aria-expanded', 'false');
+  }
+  function openMenu(){
+    nav.classList.add('open');
+    toggle.classList.add('is-open');
+    toggle.setAttribute('aria-expanded', 'true');
+  }
+
+  toggle.addEventListener('click', function(){
+    if(nav.classList.contains('open')){ closeMenu(); } else { openMenu(); }
+  });
+  nav.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', closeMenu);
+  });
+  document.addEventListener('click', function(e){
+    if(!nav.classList.contains('open')) return;
+    if(nav.contains(e.target) || toggle.contains(e.target)) return;
+    closeMenu();
+  });
+})();
+
+// ============ 個案照片：載入失敗時顯示柔和佔位圖案 ============
+function handlePhotoError(img){
+  var wrap = img.parentElement;
+  if(wrap){ wrap.classList.add('photo-fallback'); }
+  img.remove();
+}
+
 // ============ 動物語錄機 ============
 (function(){
   const qText = document.getElementById('quote-text');
@@ -11,7 +48,7 @@
     ["「打是情、罵是愛啊——你哪來這種電視劇台詞？我常聽媽媽在說的。」","綠豆，愛捉弄兄弟的貓"],
     ["「我只是看他們平常都在尖叫、跑來跑去，所以我也對他們尖叫、撲倒他們，可是他們都不喜歡。」","一隻試著理解小孩的狗"],
     ["「這裡就是我喜歡的地方。」","墨子，曾經流浪、後來被留下來的貓"],
-    ["「我喜歡踩起來有不同溫度的地方，很熱的時候踩冰冰的，很冷的時候踩熱熱的。」","饅頭，21個月大的貓"],
+    ["「我喜歡踩起來有不同溫度的地方，很熱的時候踩冰冰的，很冷的時候踩熱熱的。」","饅頭，21個月大的狗"],
     ["「不要罵我，帶著我一起認識她，告訴我要怎麼做，我會學著當一個姊姊。」","一隻第一次成為姊姊的狗"],
     ["「我沒有覺得怎樣，但可以睡就好。」","露露，13歲，個性淡定的貓"],
     ["「謝謝你來找我，也謝謝你願意聽我把話說完。」","來自多個個案結尾的共同心聲"],
