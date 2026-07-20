@@ -1,33 +1,3 @@
-// ============ 手機版選單開關 ============
-(function(){
-  var toggle = document.getElementById('menuToggle');
-  var nav = document.getElementById('navLinks');
-  if(!toggle || !nav) return;
-
-  function closeMenu(){
-    nav.classList.remove('open');
-    toggle.classList.remove('is-open');
-    toggle.setAttribute('aria-expanded', 'false');
-  }
-  function openMenu(){
-    nav.classList.add('open');
-    toggle.classList.add('is-open');
-    toggle.setAttribute('aria-expanded', 'true');
-  }
-
-  toggle.addEventListener('click', function(){
-    if(nav.classList.contains('open')){ closeMenu(); } else { openMenu(); }
-  });
-  nav.querySelectorAll('a').forEach(function(a){
-    a.addEventListener('click', closeMenu);
-  });
-  document.addEventListener('click', function(e){
-    if(!nav.classList.contains('open')) return;
-    if(nav.contains(e.target) || toggle.contains(e.target)) return;
-    closeMenu();
-  });
-})();
-
 // ============ 個案照片：載入失敗時顯示柔和佔位圖案 ============
 function handlePhotoError(img){
   var wrap = img.parentElement;
