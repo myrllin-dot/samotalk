@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
@@ -25,6 +24,29 @@
 }
 </script>
 <script>function handlePhotoError(img){ if(img && img.parentElement){ img.parentElement.classList.add('photo-fallback'); } if(img) img.remove(); }</script>
+<style>
+/* ===== 保底修正：手機選單 + 個案卡片排版（不依賴 style.css） ===== */
+.nav-inner{position:relative;}
+.menu-toggle{display:none; flex-direction:column; justify-content:center; align-items:center; gap:5px; width:38px; height:38px; border:1px solid #DAD3C4; border-radius:50%; background:#FBF9F5; cursor:pointer; flex:none; padding:0;}
+.menu-toggle span{display:block; width:16px; height:1.5px; background:#221E1A; transition:transform .2s ease, opacity .2s ease;}
+.menu-toggle.is-open span:nth-child(1){transform:translateY(6.5px) rotate(45deg);}
+.menu-toggle.is-open span:nth-child(2){opacity:0;}
+.menu-toggle.is-open span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg);}
+@media (max-width:760px){
+  .menu-toggle{display:flex;}
+  nav.links{display:none; position:absolute; top:100%; left:0; right:0; z-index:50; flex-direction:column; gap:0; background:#FBF9F5; border-bottom:1px solid #DAD3C4; box-shadow:0 16px 28px rgba(34,30,26,.08); padding:6px 24px 14px;}
+  nav.links.open{display:flex;}
+  nav.links a{padding:14px 2px; border-bottom:1px solid #DAD3C4; font-size:15.5px;}
+  nav.links a:last-child{border-bottom:0;}
+}
+@media (max-width:600px){
+  .case summary, .case .case-row{flex-wrap:wrap !important; align-items:center !important; row-gap:14px !important;}
+  .case-photo{order:1 !important;}
+  .case-meta{order:2 !important; flex:1 1 0 !important; min-width:0 !important; width:auto !important;}
+  .strip{order:3 !important; flex:0 0 100% !important; width:148px !important; max-width:60% !important;}
+  .case-toggle{order:4 !important; flex:0 0 100% !important; margin-left:0 !important; text-align:right !important;}
+}
+</style>
 </head>
 <body>
 
@@ -35,16 +57,15 @@
       <span class="cn">薩摩白</span>
     </a>
     <nav class="links" id="navLinks">
-  <a href="/#about">什麼是動物溝通</a>
-  <a href="/cases">個案的信</a>
-  <a href="/#quiz">小測驗</a>
-  <a href="/articles">好文分享</a>
-  <a href="/#apply">申請個案</a>
-</nav>
-<button class="menu-toggle" id="menuToggle" type="button" aria-label="開啟選單" aria-expanded="false" aria-controls="navLinks"
-  onclick="var n=document.getElementById('navLinks');var open=n.classList.toggle('open');this.classList.toggle('is-open',open);this.setAttribute('aria-expanded',open?'true':'false');">
-  <span></span><span></span><span></span>
-</button>
+      <a href="/#about">什麼是動物溝通</a>
+      <a href="/cases" class="active">個案的信</a>
+      <a href="/#quiz">小測驗</a>
+      <a href="/articles">好文分享</a>
+      <a href="/#apply">申請個案</a>
+    </nav>
+    <button class="menu-toggle" id="menuToggle" type="button" aria-label="開啟選單" aria-expanded="false" aria-controls="navLinks" onclick="var n=document.getElementById('navLinks');var o=n.classList.toggle('open');this.classList.toggle('is-open',o);this.setAttribute('aria-expanded',o?'true':'false');">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </header>
 
@@ -69,7 +90,7 @@
       <div class="case-list">
 
         <!-- 1 偷偷 -->
-        <details class="case" data-tags="狗">
+        <details class="case" data-tags="貓">
           <summary>
             <div class="case-photo">
               <img src="images/cases/toutou.jpg" alt="偷偷的照片" loading="lazy" onerror="handlePhotoError(this)">
@@ -81,7 +102,7 @@
               <div class="frame"><svg viewBox="0 0 24 24"><circle cx="8" cy="16" r="2"/><circle cx="7" cy="12" r="1"/><circle cx="9" cy="11.4" r="1"/><circle cx="10.6" cy="12.2" r="1"/><circle cx="16" cy="9" r="2" opacity=".4"/></svg></div>
             </div>
             <div class="case-meta">
-              <p class="case-tag mono">狗 · 走失協尋 · 2024.05</p>
+              <p class="case-tag mono">貓 · 走失協尋 · 2024.05</p>
               <h3 class="case-name">偷偷｜牠只是還沒想好要不要回家</h3>
               <p class="case-teaser">走失的第幾天，照護人終於忍不住問：牠到底在哪裡，安不安全？</p>
             </div>
