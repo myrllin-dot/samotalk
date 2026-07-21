@@ -1,3 +1,26 @@
+// ============ 手機版選單：點連結或點外面自動收合 ============
+// 開關按鈕本身用 HTML 內的 onclick 直接處理（避免依賴這支檔案有沒有正確載入）
+// 這裡只負責「點了選單裡的連結」或「點選單以外的地方」時自動收合
+(function(){
+  var toggle = document.getElementById('menuToggle');
+  var nav = document.getElementById('navLinks');
+  if(!toggle || !nav) return;
+
+  function closeMenu(){
+    nav.classList.remove('open');
+    toggle.classList.remove('is-open');
+    toggle.setAttribute('aria-expanded', 'false');
+  }
+  nav.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', closeMenu);
+  });
+  document.addEventListener('click', function(e){
+    if(!nav.classList.contains('open')) return;
+    if(nav.contains(e.target) || toggle.contains(e.target)) return;
+    closeMenu();
+  });
+})();
+
 // ============ 個案照片：載入失敗時顯示柔和佔位圖案 ============
 function handlePhotoError(img){
   var wrap = img.parentElement;
