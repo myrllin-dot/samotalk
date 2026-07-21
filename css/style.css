@@ -68,19 +68,17 @@ nav.links a:hover::after, nav.links a.active::after{transform:scaleX(1);}
 .menu-toggle{
   display:none; flex-direction:column; justify-content:center; gap:5px;
   width:38px; height:38px; border:1px solid var(--line); border-radius:50%;
-  background:var(--paper); cursor:pointer; flex:none; align-items:center; padding:0;
+  background:var(--paper); cursor:pointer; flex:none; padding:0; align-items:center;
 }
 .menu-toggle span{width:16px; height:1.5px; background:var(--ink); transition:transform .2s ease, opacity .2s ease;}
 .menu-toggle.is-open span:nth-child(1){transform:translateY(6.5px) rotate(45deg);}
 .menu-toggle.is-open span:nth-child(2){opacity:0;}
 .menu-toggle.is-open span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg);}
 
-.nav-inner{position:relative;}
-
 @media (max-width:760px){
   .menu-toggle{display:flex;}
   nav.links{
-    display:none; position:absolute; top:100%; left:0; right:0; z-index:50;
+    display:none; position:absolute; top:100%; left:0; right:0;
     flex-direction:column; gap:0; background:var(--paper);
     border-bottom:1px solid var(--line); box-shadow:0 16px 28px rgba(34,30,26,.08);
     padding:6px 24px 14px;
@@ -88,6 +86,7 @@ nav.links a:hover::after, nav.links a.active::after{transform:scaleX(1);}
   nav.links.open{display:flex;}
   nav.links a{padding:14px 2px; border-bottom:1px solid var(--line); font-size:15.5px;}
   nav.links a:last-child{border-bottom:0;}
+  nav.links a::after{display:none;}
 }
 
 /* ---------- BREADCRUMB ---------- */
@@ -212,17 +211,65 @@ details.faq p{color:var(--ink-soft); font-size:14.5px; margin:14px 0 4px; max-wi
 .case-photo img{width:100%; height:100%; object-fit:cover; display:block;}
 .case-photo.photo-fallback{display:flex; align-items:center; justify-content:center;}
 .case-photo.photo-fallback::after{content:'🐾'; font-size:16px; opacity:.32; filter:grayscale(1);}
-@media (max-width:600px){
+.strip{display:grid; grid-template-columns:repeat(4,1fr); gap:6px; width:132px; flex:none;}
+
+/* 手機版排版調整（螢幕寬度小於 768px 時生效） */
+@media (max-width: 768px) {
   .case-photo{width:36px; height:36px;}
   .case-photo.photo-fallback::after{font-size:13px;}
-}
-.strip{display:grid; grid-template-columns:repeat(4,1fr); gap:6px; width:132px; flex:none;}
-@media (max-width:600px){
-  .case summary, .case .case-row{flex-wrap:wrap; align-items:center; row-gap:14px;}
-  .case-photo{order:1;}
-  .case-meta{order:2; flex:1 1 0; min-width:0; width:auto;}
-  .strip{order:3; flex:0 0 100%; width:148px; max-width:60%;}
-  .case-toggle{order:4; flex:0 0 100%; margin-left:0 !important; text-align:right;}
+
+  /* 1. 將 summary／case-row 改為 Grid 網格佈局（限定在個案卡片內，不影響 FAQ 的 summary） */
+  .case summary,
+  .case .case-row{
+    display: grid;
+    grid-template-columns: auto 1fr; /* 左邊依圖片寬度，右邊填滿剩餘空間 */
+    grid-template-areas:
+      "photo strip"
+      "meta  meta"
+      "toggle toggle";
+    row-gap: 12px;
+    column-gap: 12px;
+    align-items: center;
+    cursor: pointer;
+  }
+  .case.placeholder .case-row{ cursor: default; }
+
+  /* 2. 圖片放到左上方 */
+  .case-photo{
+    grid-area: photo;
+  }
+
+  /* 3. 4 個 Icon 圖示放到右上方並靠右對齊 */
+  .strip{
+    grid-area: strip;
+    justify-self: end;
+    width: 148px;
+    max-width: 60%;
+  }
+
+  /* 4. 文字區塊（標籤、Title、Summary）佔據下方一整列 */
+  .case-meta{
+    grid-area: meta;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 6px; /* 控制標籤、標題、簡介之間的間距 */
+  }
+
+  /* 5. 展開／收起 按鈕獨立一列，靠右對齊 */
+  .case-toggle{
+    grid-area: toggle;
+    margin-left: 0 !important;
+    text-align: right;
+  }
+
+  /* 防止文字被擠壓或溢出 */
+  .case-name,
+  .case-teaser{
+    width: 100%;
+    word-break: break-word; /* 允許適當換行 */
+  }
+
   .case{padding:26px 20px;}
   .case-name{font-size:18.5px; line-height:1.5;}
   .case-teaser{font-size:14px; line-height:1.75;}
