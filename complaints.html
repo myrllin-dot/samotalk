@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>毛孩客訴信箱｜SAMO TALK 薩摩白</title>
+<meta name="description" content="平常都是動物在跟你說話，這次換你來告狀。毛孩客訴信箱，收集照護人們又好氣又好笑的日常小故事——那些吃飽就翻臉、討摸摸又嫌棄的瞬間。">
+<link rel="canonical" href="https://samotalk.com/complaints">
+<meta property="og:title" content="毛孩客訴信箱｜SAMO TALK 薩摩白">
+<meta property="og:description" content="這次換照護人來告狀——毛孩的日常小客訴，又好氣又好笑。">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/branding/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/branding/favicon-16.png">
+<link rel="apple-touch-icon" href="/images/branding/apple-touch-icon.png">
+<meta property="og:image" content="https://samotalk.com/images/branding/og-image.jpg">
+<meta name="twitter:image" content="https://samotalk.com/images/branding/og-image.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Noto+Serif+TC:wght@400;600;700&family=Noto+Sans+TC:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script>function handlePhotoError(img){ if(img && img.parentElement){ img.parentElement.classList.add('photo-fallback'); } if(img) img.remove(); }</script>
+<style>
+/* ===== 客訴信箱 專用樣式（不影響其他頁面） ===== */
+.complaint-list{display:flex; flex-direction:column; gap:24px;}
+.complaint-card{
+  position:relative; background:var(--paper); border:1px dashed var(--line);
+  border-radius:var(--radius); padding:32px 30px; overflow:hidden;
+}
+.complaint-stamp{
+  position:absolute; top:22px; right:26px; border:2px solid var(--amber); color:var(--amber);
+  font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:.1em; padding:5px 13px;
+  border-radius:4px; transform:rotate(7deg); opacity:.8; text-transform:uppercase; white-space:nowrap;
+}
+.complaint-head{display:flex; gap:18px; align-items:center; margin-bottom:18px; padding-right:110px;}
+.complaint-photo{width:60px; height:60px; border-radius:50%; overflow:hidden; flex:none; box-shadow:0 0 0 1px var(--line), 0 0 0 3px var(--paper); background:var(--paper-2);}
+.complaint-photo img{width:100%; height:100%; object-fit:cover; display:block;}
+.complaint-photo.photo-fallback{display:flex; align-items:center; justify-content:center;}
+.complaint-photo.photo-fallback::after{content:'🐾'; font-size:14px; opacity:.32; filter:grayscale(1);}
+.complaint-meta .no{font-family:'IBM Plex Mono',monospace; font-size:11.5px; color:var(--amber); letter-spacing:.08em; margin:0 0 4px;}
+.complaint-meta h3{font-family:'Noto Serif TC',serif; font-weight:700; font-size:17.5px; margin:0;}
+.complaint-body p{font-size:15px; line-height:1.9; color:var(--ink); margin:0 0 14px;}
+.complaint-verdict{font-size:13.5px; color:var(--ink-soft); border-top:1px dashed var(--line); padding-top:14px; margin-top:4px;}
+.complaint-verdict strong{color:var(--ink); font-family:'Noto Serif TC',serif;}
+.complaint-card.placeholder{opacity:.6;}
+.complaint-card.placeholder .complaint-stamp{border-color:var(--line); color:var(--ink-soft);}
+.complaint-card.placeholder .complaint-body p{font-style:italic;}
+@media (max-width:600px){
+  .complaint-head{flex-wrap:wrap; padding-right:0;}
+  .complaint-stamp{position:static; display:inline-block; margin-top:14px; transform:rotate(-2deg);}
+}
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="nav-inner">
+    <a href="/" class="brand">
+      <span class="mark">SAMO TALK</span>
+      <span class="cn">薩摩白</span>
+    </a>
+    <nav class="links" id="navLinks">
+      <a href="/#about">什麼是動物溝通</a>
+      <a href="/cases">個案的信</a>
+      <a href="/complaints" class="active">客訴信箱</a>
+      <a href="/articles">好文分享</a>
+      <a href="/#apply">申請個案</a>
+    </nav>
+    <button class="menu-toggle" id="menuToggle" type="button" aria-label="開啟選單" aria-expanded="false" aria-controls="navLinks" onclick="var n=document.getElementById('navLinks');var o=n.classList.toggle('open');this.classList.toggle('is-open',o);this.setAttribute('aria-expanded',o?'true':'false');">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="wrap crumb"><a href="/">首頁</a><span>/</span>客訴信箱</div>
+
+<main>
+  <section class="tight">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">附錄 · 換你來寫信</p>
+        <h2>毛孩客訴信箱</h2>
+        <p>網站上其他地方，都是動物在說話。這裡反過來——換照護人來告狀。那些牠吃飽就翻臉、討摸摸又嫌棄、明明很愛你卻死不承認的日常瞬間，歡迎寫成一封輕鬆的「客訴信」，貼張照片，讓大家笑一笑，也讓彼此知道：原來大家的毛孩都一樣不講理。</p>
+      </div>
+
+      <div class="complaint-list">
+
+        <!-- 案件 0001 -->
+        <div class="complaint-card">
+          <span class="complaint-stamp">已受理</span>
+          <div class="complaint-head">
+            <div class="complaint-photo">
+              <img src="images/complaints/case-0001.jpg" alt="案件0001照片" loading="lazy" onerror="handlePhotoError(this)">
+            </div>
+            <div class="complaint-meta">
+              <p class="no">案號 #0001 · 貓</p>
+              <h3>吃飯前是天使，吃飽後不認人</h3>
+            </div>
+          </div>
+          <div class="complaint-body">
+            <p><strong>申訴人：</strong>一位每天準時報到的貓奴</p>
+            <p><strong>案由：</strong>牠在吃東西之前，眼睛都會睜得很大很可愛，乖乖坐好，還會主動把手放上來，超級聽話。可是一吃完，立刻翻臉走人，伸手要牠握手，牠就用一種鄙視的眼神看著我，好像我們根本不熟。</p>
+          </div>
+          <div class="complaint-verdict">
+            <strong>調查結果：</strong>經調查，此為貓科動物常見之「當下最真實」原則，情感濃度與飯碗存量成正比，純屬物種天性，不予受理。
+          </div>
+        </div>
+
+        <!-- 預留案件 -->
+        <div class="complaint-card placeholder">
+          <span class="complaint-stamp">案件受理中</span>
+          <div class="complaint-head">
+            <div class="complaint-photo">
+              <img src="images/complaints/case-0002.jpg" alt="案件0002照片" loading="lazy" onerror="handlePhotoError(this)">
+            </div>
+            <div class="complaint-meta">
+              <p class="no">案號 #0002 · 待補</p>
+              <h3>這個案子正在等一封信</h3>
+            </div>
+          </div>
+          <div class="complaint-body">
+            <p>也許是你家的狗、你家的貓，或是你家的兔子——歡迎把牠的「罪狀」寫成一封信，寄給我們。</p>
+          </div>
+          <div class="complaint-verdict">
+            <strong>調查結果：</strong>尚未受理，等待第一位申訴人。
+          </div>
+        </div>
+
+        <div class="complaint-card placeholder">
+          <span class="complaint-stamp">案件受理中</span>
+          <div class="complaint-head">
+            <div class="complaint-photo">
+              <img src="images/complaints/case-0003.jpg" alt="案件0003照片" loading="lazy" onerror="handlePhotoError(this)">
+            </div>
+            <div class="complaint-meta">
+              <p class="no">案號 #0003 · 待補</p>
+              <h3>這個案子正在等一封信</h3>
+            </div>
+          </div>
+          <div class="complaint-body">
+            <p>越荒謬越好，越日常越好——這裡不評分，只想聽你說。</p>
+          </div>
+          <div class="complaint-verdict">
+            <strong>調查結果：</strong>尚未受理，等待第一位申訴人。
+          </div>
+        </div>
+
+      </div>
+
+      <div class="apply-panel" style="margin-top:56px;">
+        <div>
+          <h3 class="serif" style="color:var(--paper);">輪到你告狀了</h3>
+          <p>寫下牠的「罪狀」，附一張照片。通過的話，會被登上這個信箱，跟大家一起笑一笑。</p>
+          <a class="btn primary" href="https://docs.google.com/forms/d/e/1FAIpQLSdT-inYL_3H29SrVuTCWt35a3Srt3rWawCgtqr9IuoOGmwdog/viewform" target="_blank" rel="noopener" id="complaintFormLink">我要提交客訴</a>
+          <p class="apply-note">＊ 這裡分享的都是輕鬆好笑的小事，如果內容涉及動物真正受傷或需要協助的情況，建議直接申請一次正式的動物溝通個案。</p>
+        </div>
+        <div class="voice-card" style="background:transparent; border-color:#3A362F;">
+          <p style="color:#EDEAE3;">「我沒有不聽話，我只是吃飽了。」</p>
+          <p class="who" style="color:#8B857A;">— 幾乎所有被告的共同答辯</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap footer-inner">
+    <div>
+      <p class="serif" style="margin:0 0 6px; font-size:15px;">SAMO TALK 薩摩白</p>
+      <p style="margin:0;">用文字翻譯動物的心聲。</p>
+    </div>
+    <div>
+      <a href="/#about">關於</a>
+      <a href="/cases">個案</a>
+      <a href="/complaints">客訴信箱</a>
+      <a href="/articles">文章</a>
+      <a href="/#apply">申請</a>
+      <a href="https://line.me/R/ti/p/@103qjjuy" target="_blank" rel="noopener">LINE</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
